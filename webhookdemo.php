@@ -18,9 +18,7 @@ if($method == "POST")
             break;
     default:
          $speech = 'sorry i was not able to get that please try again';
-            break:
-            
-
+            break;
 }
     
     $response = new \stdClass();
