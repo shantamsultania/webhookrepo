@@ -2,14 +2,15 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-if($method == "POST")
+if ($method == "POST")
 {
-    $requestbody = file_get_contents('php://input');
-    $json = json_decode($requestbody);
+    $requestBody = file_get_contents('php://input');
+    $json = json_decode($requestBody);
     
-    $text = $json->queryResult->parameters->any;
+    $text = $json->result->parameters->any;
     
-    switch ($text) {
+    switch ($text) 
+    {
     case 'my name is kamal vaid':
             $speech = 'hi kamal how can i help you';
         break;
@@ -32,4 +33,5 @@ else
 {
     echp "only POST method allowed";
 }
+
 ?>
