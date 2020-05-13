@@ -1,5 +1,5 @@
 {
- "user":"shantam"
- "password":"root"
+ "require": {
+    "php": "7.1*"
  
 }
